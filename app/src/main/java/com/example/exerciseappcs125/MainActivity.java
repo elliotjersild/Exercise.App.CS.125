@@ -1,13 +1,17 @@
 package com.example.exerciseappcs125;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+
+
+
 public class MainActivity extends AppCompatActivity {
 
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -17,9 +21,12 @@ public class MainActivity extends AppCompatActivity {
         viewRun.setOnClickListener(unused -> viewRunClicked());
     }
     private void newRunClicked() {
+        System.out.println("Will go to new activity to enter Run date and timed length");
+        startActivity(new Intent(this, NewRunActivity.class));
 
     }
     private void viewRunClicked() {
+        System.out.println("Will display the Runs the user has entered");
 
     }
 }
