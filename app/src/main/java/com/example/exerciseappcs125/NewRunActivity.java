@@ -18,11 +18,13 @@ public class NewRunActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newrun);
         Button enter = findViewById(R.id.enterExercise);
-        enter.setOnClickListener(unused -> System.out.println("Enters the user data"));
-        EditText date = (EditText) findViewById(R.id.dateEntered);
-        EditText timeRan = (EditText) findViewById(R.id.timeOfRun);
-        ConstraintLayout calender = findViewById(R.id.calenderGroup);
-        View chunkRun = getLayoutInflater().inflate(R.layout.chunk_run_info, calender, false);
+        enter.setOnClickListener(unused -> {
+
+            EditText date = (EditText) findViewById(R.id.dateEntered);
+            EditText timeRan = (EditText) findViewById(R.id.timeOfRun);
+            ConstraintLayout calender = findViewById(R.id.calenderGroup);
+            View chunkRun = getLayoutInflater().inflate(R.layout.chunk_run_info, calender, false);
+        });
 
        // LinearLayout invGroup = findViewById(R.id.invitationsGroup);
         //                    invGroup.setVisibility(View.VISIBLE);
