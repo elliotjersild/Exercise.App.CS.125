@@ -13,29 +13,22 @@
         android:layout_marginStart="77dp"
         android:layout_marginLeft="77dp"
         android:layout_marginTop="41dp"
-        android:text="Running Time:"
+        android:text="@string/running_time"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="731dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="222dp"
-        android:layout_height="51dp"
+    <EditText
+        android:id="@+id/timeOfRun"
+        android:layout_width="227dp"
+        android:layout_height="55dp"
         android:layout_marginStart="94dp"
         android:layout_marginLeft="94dp"
-        android:layout_marginBottom="567dp"
-        android:hint="hint"
+        android:layout_marginBottom="516dp"
+        android:ems="10"
+        android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

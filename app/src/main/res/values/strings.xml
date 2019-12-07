@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Exercise App CS 125</string>
+    <string name="running_time">Running Time:</string>
 </resources>

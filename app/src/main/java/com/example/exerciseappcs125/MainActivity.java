@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Button viewRun = findViewById(R.id.viewRuns);
         newRun.setOnClickListener(unused -> newRunClicked());
         viewRun.setOnClickListener(unused -> viewRunClicked());
+        System.out.println("Will go to new activity to enter Run date and timed length");
     }
     private void newRunClicked() {
         System.out.println("Will go to new activity to enter Run date and timed length");
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void viewRunClicked() {
         System.out.println("Will display the Runs the user has entered");
+        startActivity(new Intent(this, CalenderActivity.class));
 
     }
 }
