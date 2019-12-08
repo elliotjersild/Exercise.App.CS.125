@@ -8,11 +8,16 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class NewRunActivity extends AppCompatActivity {
 
     private String dateOfRun;
 
     private String timedRun;
+
+    Map<String, String> storeRuns = new HashMap<>();
 
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +28,11 @@ public class NewRunActivity extends AppCompatActivity {
             EditText date = (EditText) findViewById(R.id.dateEntered);
             EditText timeRan = (EditText) findViewById(R.id.timeOfRun);
             ConstraintLayout calender = findViewById(R.id.calenderGroup);
+            String storeDate = date.toString();
+            String storeRun = timeRan.toString();
+            System.out.println("You entered " + storeDate + " " + storeRun);
             View chunkRun = getLayoutInflater().inflate(R.layout.chunk_run_info, calender, false);
+
         });
 
        // LinearLayout invGroup = findViewById(R.id.invitationsGroup);

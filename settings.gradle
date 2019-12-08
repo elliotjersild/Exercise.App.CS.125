@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':calendercolor', ':sample', ':library'
 rootProject.name='Exercise App CS 125'
